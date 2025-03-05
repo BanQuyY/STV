@@ -1,8 +1,11 @@
 {
-  "name": "STV Extension",
-  "version": "1.0.0",
-  "description": "An external extension for SillyTavern using STV.js.",
-  "author": "Your Name",
-  "files": ["index.html", "STV.js"],
-  "permissions": []
+    "display_name": "llm-translator",
+    "loading_order": 9,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "author": "1234anon",
+    "version": "1.3.5",
+    "homePage": "https://github.com/1234anon/llm-translator",
+    "auto_update": true
 }
