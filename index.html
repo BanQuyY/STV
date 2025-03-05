@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html langen">
+<head>
+ <meta charsetUTF-8">
+  <meta nameviewport" content="width=device-width, initial-scale=1.0">
+  <title>V Extension</title  <script="STV.js" defer></script  <style>
+ body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 18px;
+      color: green;
+    }
+  </style</head>
+>
+  <h1>STV</h1>
+ <button="run-stv">Run STV</button  <div idoutput"></div>
+>
+</html>
+`
+
+---
+
+### 3. **File `STV.js`**
+Đây là file JavaScript chính, nơi bạn sẽ viết logic của extension. Tôi sẽ thêm một ví dụ cơ bản để hiển thị thông báo khi nhấn nút.
+
+```javascript
+// STV.js
+
+// Hàm chính của STV
+function runSTV() {
+  // Thêm logic của bạn ở đây
+  console.log("STV.js is running!");
+  const outputDiv = document.getElementById("output");
+  if (outputDiv) {
+    outputDiv.innerText = "STV.js has been executed successfully!";
+  }
+}
+
+// Gắn sự kiện vào nút bấm (nếu có giao diện)
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("run-stv");
+  if (button) {
+    button.addEventListener("click", runSTV);
+  }
+});

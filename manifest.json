@@ -1,0 +1,8 @@
+{
+  "name": "STV Extension",
+  "version": "1.0.0",
+  "description": "An external extension for SillyTavern using STV.js.",
+  "author": "Your Name",
+  "files": ["index.html", "STV.js"],
+  "permissions": []
+}
