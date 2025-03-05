@@ -1,0 +1,112 @@
+/* 번역 수정창 */
+.translation_edit_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 5px;
+}
+
+.translation_edit_buttons .translation_edit_done,
+.translation_edit_buttons .translation_edit_cancel {
+    opacity: 0.7;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: var(--SmartThemeBodyColor);
+}
+
+.translation_edit_buttons .translation_edit_done:hover,
+.translation_edit_buttons .translation_edit_cancel:hover {
+    opacity: 1;
+}
+
+.mes.translation-editing .mes_buttons *,
+.mes.translation-editing .swipeRightBlock,
+.mes.translation-editing .swipe_left {
+    display: none  !important;
+}
+
+/* 메세지 액션 아이콘 줄바꿈 */
+.extraMesButtons.visible,
+body.expandMessageActions .mes .mes_buttons .extraMesButtons {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+/* 파라미터 설정 섹션 */
+.parameter-settings {
+    margin-top: 10px;
+}
+
+.parameter-group {
+    display: none;
+    margin-top: 10px;
+}
+
+.parameter-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.parameter-item {
+    flex: 1;
+    max-width: 48%;
+}
+
+.parameter-item small {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.parameter-row {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+.parameter-row .parameterbox {
+    flex: 1;
+    width: 50%;
+}
+
+.parameter-row .neo-range-slider,
+.parameter-row .neo-range-input {
+    width: 100%;
+}
+
+.parameterbox small {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.parameterbox {
+    align-items: center;
+}
+
+.flexFlowColumn {
+    flex-flow: column;
+}
+.gap0 {
+    gap: 0 !important;
+}
+
+/* 리버스 프록시 */
+.password-container {
+    display: flex;
+    width: 100%;
+}
+
+.password-container .text_pole {
+    flex: 1;
+    margin-right: 5px;
+}
+
+/* 번역 삭제 */
+.translation_settings .menu_button {
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
